@@ -1,0 +1,650 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: inherit;
+    outline: 0;
+}
+
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    max-width: fit-content;
+}
+
+h1 {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 52px;
+    line-height: 73px;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 42px;
+    }
+
+    .hero .hero_content .hero_description .text {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .advantages .advantages_card {
+        max-width: 250px;
+    }
+
+    .advantages .advantages_card .hero_icon {
+        max-width: 72px;
+        max-height: 72px;
+        margin-bottom: 24px;
+    }
+
+    .advantages .advantages_card .subtitle {
+        font-size: 18px;
+    }
+
+    .advantages .advantages_card .hero_icon svg {
+        max-width: 72px;
+        max-height: 72px;
+    }
+
+    .advantages .advantages_card .hero_icon .text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .rates .rates_container {
+        max-width: 862px;
+        min-height: 472px;
+    }
+
+    .rates .rates_container .rates_top {
+        justify-content: space-around;
+    }
+
+    .rates .rates_container .rates_top .rates_left .rates_price .price_item {
+        font-size: 67px;
+    }
+
+    .rates .rates_container .rates_top .rates_left .rates_price div {
+        font-size: 16px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li {
+        font-size: 20px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li+li {
+        padding-top: 20px;
+    }
+
+    .rates .rates_container .rates_form .button_active {
+        font-size: 20px;
+    }
+
+    .rates .rates_container .rates_form input {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .channels .channels_container {
+        padding: 60px 30px;
+    }
+
+    .channels .channels_container .channels_row+.channels_row {
+        padding-top: 25px;
+    }
+
+    .channels .channels_container .button_group {
+        padding-bottom: 32px;
+    }
+
+    .channels .channels_container .channels_row {
+        justify-content: center;
+    }
+
+    .channels .channels_container .button_transparent {
+        font-size: 20px;
+        padding: 7px 7px;
+    }
+
+    .gadgets .gadgets_container {
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .hero .hero_content .hero_description .text {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .hero .hero_content .hero_description {
+        max-width: 600px;
+    }
+
+    .advantages .advantages_card {
+        max-width: 200px;
+    }
+
+    .advantages .advantages_card .hero_icon svg {
+        max-width: 64px;
+        max-height: 64px;
+    }
+
+    .advantages .advantages_card .hero_icon {
+        margin-bottom: 20px;
+    }
+
+    .advantages .advantages_card .subtitle {
+        font-size: 16px;
+    }
+
+    .rates .rates_container {
+        padding: 50px 80px;
+    }
+
+    .channels .channels_container h2 {
+        font-size: 30px;
+    }
+
+    .channels .channels_container .text {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 510px;
+    }
+
+    .questions .questions_container {
+        padding: 40px 0;
+    }
+
+    .questions .questions_container .questions_col .questions_block .text {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .hero .hero_content .hero_description .text {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .header .right_menu .social {
+        display: none;
+    }
+
+    header .right_menu a {
+        display: none;
+    }
+
+    .header .right_menu a {
+        display: none;
+    }
+
+    .hero {
+        padding-bottom: 0;
+    }
+
+    .hero .hero_content {
+        min-width: 0;
+    }
+
+    .hero .hero_content .hero_description .text {
+        font-size: 17px;
+        line-height: 24px;
+        padding: 24px 0 34px 0;
+    }
+
+    .hero .hero_content .hero_description {
+        max-width: 430px;
+    }
+
+    .hero .hero_content .hero_description .button_active {
+        font-size: 17px;
+        padding: 16px 24px;
+    }
+
+    .hero .hero_content .hero_img {
+        display: none;
+    }
+
+    .advantages {
+        padding-top: 42px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .advantages .advantages_card {
+        text-align: center;
+        max-width: 154px;
+    }
+
+    .advantages .advantages_card .hero_icon {
+        margin: 0 auto;
+    }
+
+    .advantages .advantages_card .hero_icon svg {
+        max-width: 48px;
+        max-height: 48px;
+    }
+
+    .advantages .advantages_card .text {
+        display: none;
+    }
+
+    .rates .rates_container {
+        padding: 50px 20px 30px 20px;
+    }
+
+    .rates .rates_container .rates_top .rates_left .rates_price .price_item {
+        font-size: 50px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li {
+        font-size: 16px;
+    }
+
+    .rates .rates_container .rates_top .rates_left .rates_price_text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .rates .rates_container .rates_top .rates_left .rates_price_text {
+        padding-top: 0;
+    }
+
+    .rates .rates_container .rates_top .rates_left {
+        max-width: 140px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li:before {
+        left: -34px;
+        bottom: -10px;
+    }
+
+    .channels .channels_container {
+        padding: 60px 0;
+    }
+
+    .gadgets .gadgets_container {
+        padding-left: 0;
+        padding-top: 0;
+    }
+
+    .channels .channels_container .channels_row {
+        flex-wrap: nowrap;
+    }
+
+    .channels .channels_container .channels_row div:last-child {
+        display: none;
+    }
+
+    .channels .channels_container .button_active {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .gadgets .gadgets_container {
+        flex-direction: column;
+        text-align: center;
+        min-width: 0;
+        gap: 40px;
+    }
+
+    .gadgets .gadgets_container .gadgets_content .button_active {
+        margin: 0 auto;
+    }
+
+    .gadgets .gadgets_container .gadgets_img {
+        order: 1;
+        max-height: 350px;
+        width: 100%;
+    }
+
+    .channels .channels_container {
+        padding: 0 0 40px 0;
+    }
+
+    .gadgets .gadgets_container .gadgets_content {
+        order: 2;
+    }
+
+    .questions h2 {
+        font-size: 30px;
+    }
+
+    .questions .questions_container .questions_col .questions_block .subtitle {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .footer .footer_container .footer_top {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .footer .footer_container .footer_top {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer .footer_container .footer_top .footer_about {
+        max-width: none;
+    }
+
+    .footer .footer_container .footer_top .support .support_body {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .footer .footer_container .footer_top .support ul+ul {
+        padding-top: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .header {
+        padding: 44px 16px 8px 16px;
+    }
+
+    .header .right_menu .button_transparent {
+        font-size: 16px;
+        padding: 9px 24px;
+    }
+
+    .header img {
+        max-width: 56px;
+        max-height: 50px;
+    }
+
+    .hero {
+        padding: 24px 16px 60px 16px;
+    }
+
+    .hero .hero_content .hero_description .hero_img_none {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .hero .hero_content .hero_description .text {
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0 0 32px 0;
+    }
+
+    .hero .hero_content .hero_description .button_active {
+        font-size: 16px;
+        padding: 16px 24px;
+    }
+
+    .hero .hero_content .hero_img {
+        display: none;
+    }
+
+    .hero .hero_content {
+        min-width: 0;
+    }
+
+    .hero .hero_content .hero_description {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    .rates {
+        padding: 40px 0;
+    }
+
+    .rates .rates_container .rates_top {
+        justify-content: center;
+        flex-direction: column;
+        display: flex;
+        gap: 26px;
+    }
+
+    .rates .rates_container .rates_top .rates_left {
+        display: flex;
+        max-width: 140px;
+        margin: 0 auto;
+    }
+
+    .rates .rates_container .rates_top .rates_right {
+        display: flex;
+        max-width: 170px;
+        padding-left: 35px;
+        margin: 0 auto;
+    }
+
+    .rates .rates_container .rates_top .rates_left .rates_price_text {
+        font-size: 14px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li {
+        font-size: 13px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li:before {
+        left: -42px;
+        bottom: -10px;
+    }
+
+    .rates .rates_container .rates_top .rates_right li+li {
+        padding-top: 14px;
+    }
+
+    .rates .rates_container .rates_form {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .rates .rates_container .rates_form {
+        padding-top: 37px;
+    }
+
+    .rates .rates_container .rates_form input {
+        font-size: 16px;
+        padding: 16px;
+        border-radius: 5px;
+    }
+
+    .rates .rates_container .rates_form .button_active {
+        padding: 15px;
+        width: 100%;
+        font-size: 16px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+
+    .channels .channels_container .button_transparent {
+        font-size: 16px;
+    }
+
+    .channels .channels_container .channels_row div:nth-child(4) {
+        display: none;
+    }
+
+    .channels .channels_container .button_active {
+        font-size: 16px;
+        padding: 7px 7px;
+    }
+
+    .channels .channels_container .channels_row+.channels_row {
+        padding-top: 10px;
+    }
+
+    .questions .questions_container .questions_col {
+        gap: 20px;
+    }
+
+    .gadgets .gadgets_row {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .gadgets .gadgets_row div {
+        width: 128px;
+        height: 23px;
+    }
+
+    .gadgets .gadgets_container .gadgets_content .button_active {
+        font-size: 15px;
+        padding: 14px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .gadgets .gadgets_container .gadgets_content .text {
+        font-size: 15px;
+        line-height: 22px;
+        padding: 18px 0 13px 0;
+    }
+
+    .gadgets .gadgets_container .gadgets_content h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .gadgets .gadgets_container .gadgets_img {
+        display: none;
+    }
+
+    .gadgets .gadgets_container .gadgets_content .gadgets_img_show {
+        display: block;
+    }
+
+    .gadgets {
+        padding: 0 0 45px 0;
+    }
+
+    .gadgets .gadgets_container {
+        padding: 0 16px 45px 16px;
+    }
+
+    .questions .questions_container {
+        flex-direction: column;
+    }
+
+    .questions h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .questions .questions_container .questions_col {
+        width: 100%;
+    }
+
+
+    .footer .footer_container .footer_top {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .footer {
+        padding: 50px 14px 14px 14px;
+    }
+
+    .footer .footer_container .footer_top .support .subtitle {
+        font-size: 16px;
+    }
+
+    .footer .footer_container .footer_top .support .support_body {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .footer_container .footer_top .support ul+ul {
+        padding-top: 0;
+    }
+
+    .footer .footer_container .payment {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 32px;
+        gap: 15px;
+    }
+
+    .footer .footer_container .copyright {
+        font-size: 11px;
+        flex-direction: column;
+        gap: 0;
+        line-height: 18px;
+    }
+
+    .footer .footer_container .copyright .dot {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer .footer_container .footer_top .support .support_body {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
